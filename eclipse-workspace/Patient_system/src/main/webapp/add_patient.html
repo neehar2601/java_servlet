@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Patient</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #f9f9f9;
+        }
+        input, select {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Add a New Patient</h2>
+
+    <form action="PatientServlet" method="GET">
+        <input type="hidden" name="action" value="addPatient">
+        <label for="p_id">Patient ID:</label>
+        <input type="number" id="p_id" name="p_id" required>
+
+        <label for="p_name">Name:</label>
+        <input type="text" id="p_name" name="p_name" required>
+
+        <label for="illness">Illness:</label>
+        <input type="text" id="illness" name="illness" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <button type="submit">Add Patient</button>
+    </form>
+
+    <br><a href="index.html">Back to Menu</a>
+
+</body>
+</html>

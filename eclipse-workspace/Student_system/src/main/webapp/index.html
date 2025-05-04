@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Info</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f3a683, #f7b7a3);
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: inline-block;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        form:hover {
+            transform: scale(1.05);
+        }
+
+        input, button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: background-color 0.3s, border 0.3s;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        input[type="text"]:focus, input[type="submit"]:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        .message {
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #28a745;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .error {
+            background-color: #e74c3c;
+        }
+
+        .success {
+            background-color: #4CAF50;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .divider {
+            margin: 40px 0;
+            border-bottom: 2px solid #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Manipal School of Information sciences</h2>
+        
+        <div class="message success" id="message"></div>
+
+        <!-- Search Student Form -->
+        <form action="StudentServlet" method="post">
+            <h3>Search Student by Roll Number</h3>
+            Roll Number: <input type="text" name="rollNumber" required>
+            <input type="submit" value="Search">
+        </form>
+
+        <div class="divider"></div>
+
+        <!-- Add Student Form -->
+        <form action="StudentServlet" method="post">
+            <h3>Add New Student</h3>
+            <input type="hidden" name="action" value="addStudent">
+            Roll Number: <input type="text" name="rollNumber" required><br>
+            Name: <input type="text" name="name" required><br>
+            Age: <input type="text" name="age" required><br>
+            Department: <input type="text" name="department" required><br>
+            <input type="submit" value="Add Student">
+        </form>
+    </div>
+
+    <script>
+        // Sample message handler for success/error (can be replaced with dynamic handling)
+        function showMessage(message, type) {
+            const messageDiv = document.getElementById('message');
+            messageDiv.innerText = message;
+            messageDiv.classList.add(type); // Add class 'error' or 'success'
+        }
+
+        // Simulating a success message on page load for demonstration
+        window.onload = function() {
+            // Show a success message as an example (you can replace it with actual logic based on the servlet response)
+            showMessage("Student details fetched successfully!", "success");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+2025-03-27 19:13:41 [http-nio-8082-exec-3] INFO  StudentServlet - Received input for roll number: 241047002
+2025-03-27 19:13:41 [http-nio-8082-exec-3] INFO  StudentServlet - Attempting to connect to the database...
+2025-03-27 19:13:41 [http-nio-8082-exec-3] INFO  StudentServlet - Database connection established successfully.
+2025-03-27 19:13:41 [http-nio-8082-exec-4] INFO  StudentServlet - Received input for roll number: 241047002
+2025-03-27 19:13:41 [http-nio-8082-exec-4] INFO  StudentServlet - Attempting to connect to the database...
+2025-03-27 19:13:41 [http-nio-8082-exec-4] INFO  StudentServlet - Database connection established successfully.
+2025-03-27 19:13:41 [http-nio-8082-exec-3] INFO  StudentServlet - Executing query to fetch student details for Roll Number: 241047002
+2025-03-27 19:13:41 [http-nio-8082-exec-4] INFO  StudentServlet - Executing query to fetch student details for Roll Number: 241047002
+2025-03-27 19:13:42 [http-nio-8082-exec-4] INFO  StudentServlet - Student details found for Roll Number: 241047002
+2025-03-27 19:13:42 [http-nio-8082-exec-3] INFO  StudentServlet - Student details found for Roll Number: 241047002
+2025-03-27 19:13:42 [http-nio-8082-exec-3] INFO  StudentServlet - Database connection closed.
+2025-03-27 19:13:42 [http-nio-8082-exec-4] INFO  StudentServlet - Database connection closed.
+2025-03-27 19:14:23 [http-nio-8082-exec-8] INFO  StudentServlet - Received input for roll number: 241047039
+2025-03-27 19:14:23 [http-nio-8082-exec-8] INFO  StudentServlet - Attempting to connect to the database...
+2025-03-27 19:14:23 [http-nio-8082-exec-8] INFO  StudentServlet - Database connection established successfully.
+2025-03-27 19:14:23 [http-nio-8082-exec-8] INFO  StudentServlet - Executing query to fetch student details for Roll Number: 241047039
+2025-03-27 19:14:23 [http-nio-8082-exec-8] INFO  StudentServlet - Student details found for Roll Number: 241047039
+2025-03-27 19:14:23 [http-nio-8082-exec-8] INFO  StudentServlet - Database connection closed.
+2025-04-04 03:44:28 [http-nio-8082-exec-3] INFO  StudentServlet - Received input for roll number: 241047020
+2025-04-04 03:44:28 [http-nio-8082-exec-3] INFO  StudentServlet - Attempting to connect to the database...
+2025-04-04 03:44:28 [http-nio-8082-exec-3] INFO  StudentServlet - Database connection established successfully.
+2025-04-04 03:44:28 [http-nio-8082-exec-3] INFO  StudentServlet - Executing query to fetch student details for Roll Number: 241047020
+2025-04-04 03:44:28 [http-nio-8082-exec-3] INFO  StudentServlet - Student details found for Roll Number: 241047020
+2025-04-04 03:44:28 [http-nio-8082-exec-3] INFO  StudentServlet - Database connection closed.
+2025-04-04 04:03:34 [http-nio-8082-exec-5] INFO  StudentServlet - Received input for roll number: 241047020
+2025-04-04 04:03:34 [http-nio-8082-exec-5] INFO  StudentServlet - Attempting to connect to the database...
+2025-04-04 04:03:34 [http-nio-8082-exec-5] INFO  StudentServlet - Database connection established successfully.
+2025-04-04 04:03:34 [http-nio-8082-exec-5] INFO  StudentServlet - Executing query to fetch student details for Roll Number: 241047020
+2025-04-04 04:03:34 [http-nio-8082-exec-5] INFO  StudentServlet - Student details found for Roll Number: 241047020
+2025-04-04 04:03:34 [http-nio-8082-exec-5] INFO  StudentServlet - Database connection closed.
+2025-04-04 04:03:53 [http-nio-8082-exec-4] INFO  StudentServlet - Received input for roll number: 241047020
+2025-04-04 04:03:53 [http-nio-8082-exec-4] INFO  StudentServlet - Attempting to connect to the database...
+2025-04-04 04:03:54 [http-nio-8082-exec-4] INFO  StudentServlet - Database connection established successfully.
+2025-04-04 04:03:54 [http-nio-8082-exec-4] INFO  StudentServlet - Executing query to fetch student details for Roll Number: 241047020
+2025-04-04 04:03:54 [http-nio-8082-exec-4] INFO  StudentServlet - Student details found for Roll Number: 241047020
+2025-04-04 04:03:54 [http-nio-8082-exec-4] INFO  StudentServlet - Database connection closed.
